@@ -73,4 +73,12 @@ footer {
 a {
   color: #6e23d1;
   text-decoration: none;
+  padding: 1.25em 0;
+  outline: 0;
+  transition: padding 0.1s ease-in-out;
+}
+
+a:hover {
+  padding: 1.25em;
+  outline: 1px solid #6e23d1;
 }
