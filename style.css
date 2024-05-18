@@ -1,9 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap");
+
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "Noto Serif", serif;
   margin: 0;
   padding: 0;
   height: 100vh;
-  background-color: #f0f0f0;
+  background-color: #ececdc;
   display: flex;
   align-items: center;
 }
@@ -59,7 +61,7 @@ p {
   font-size: 1.5rem;
   margin: 0;
   line-height: 2em;
-  color: #333;
+  color: #4a5455;
 }
 
 footer {
