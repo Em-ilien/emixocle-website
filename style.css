@@ -16,7 +16,39 @@ section {
   gap: 2em;
 }
 
-div.text {
+section main {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+
+section .logo-animation {
+  z-index: 1;
+  position: relative;
+  height: 100px;
+  width: 100%;
+  transform: translateY(calc(100% + 0.5em));
+}
+
+section .logo-animation:hover ~ .logo {
+  transform: translateX(calc(100% - 100px));
+}
+
+section .logo-animation:hover ~ .logo img {
+  content: url("./public/img/emixocle-logo-red.png");
+}
+
+section .logo {
+  transition: transform 0.4s ease-in-out 0.05s;
+}
+
+section .logo img {
+  width: 100px;
+  height: 100px;
+  display: block;
+}
+
+section .text {
   display: flex;
   flex-direction: column;
   width: fit-content;
