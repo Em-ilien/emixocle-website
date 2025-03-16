@@ -41,6 +41,15 @@ section .logo-animation:hover ~ .logo img {
   content: url("./public/img/emixocle-logo-red.png");
 }
 
+section .logo-animation::after {
+  content: "";
+  background: url("./public/img/emixocle-logo-red.png") no-repeat;
+  position: absolute;
+  width: 0;
+  height: 0;
+  visibility: hidden;
+}
+
 section .logo {
   transition: transform 0.4s ease-in-out 0.05s;
 }
